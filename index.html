@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to do list</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--  awsome front  icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link to css file -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+   <!--Link to the javaScript file  -->
+   <script type="text/javaScript" src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- heading for to list -->
+    <div class="main">
+      <h1> To-Do-List </h1>
+    </div>
+    <div class="input_cover">
+      <!-- note book icon from awsome front -->
+      <i class='far fa-file-alt' "></i>
+      <!-- Input box for to do's -->
+      <input type="text" placeholder="Enter your Todo's..." id="input">
+      <!-- add button -->
+      <button type="submit" ><i class="fa-solid fa-circle-plus add"></i></button>
+      
+    </div>
+    <div class="final">
+      <!-- completed task -->
+      <div class="final_data">
+        <i class="fa-solid fa-check-double tick" ></i>
+        <span class="completedAll">Completed all tasks</span>
+      </div>
+      <p class="clear">Clear Completed</p>
+    </div>
+    <hr>
+    <div class="list_item">
+      <ul id="list">
+      </ul>
+    </div>
+    <hr>
+    <div id="end">
+      <div id="task">
+        <p><span id="total_task">0</span> task left</p>
+      </div>
+      <div id="right">
+        <p class="deleteAll">Delete All</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
